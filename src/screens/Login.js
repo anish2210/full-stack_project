@@ -24,7 +24,9 @@ let navigate = useNavigate()
         }
 
         if(json.success){
-          navigate('/');
+          localStorage.setItem("authToken", json.authToken);
+          console.log(localStorage.getItem("authToken"))
+          navigate("/");
         }
         
     }
