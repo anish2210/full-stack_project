@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useDispatchCart,useCart } from './ContextReducer';
-import { useResolvedPath } from 'react-router-dom';
+// import { useResolvedPath } from 'react-router-dom';
 export default function Card(props) {
 let dispatch = useDispatchCart();
     let data = useCart();
@@ -41,7 +41,7 @@ let dispatch = useDispatchCart();
                         </select>
 
                         <div className='d-inline h-100 fs-5'>
-                            ${finalPrice}/-
+                        ₹{finalPrice}/-
                         </div>
                     </div>
                     <hr>
